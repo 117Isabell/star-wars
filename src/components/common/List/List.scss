@@ -1,0 +1,29 @@
+@use '../../../styles/variables' as v;
+
+.list {
+  &__grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    justify-content: space-between;
+  }
+
+  &__pagination {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 20px;
+
+    .pagination-button {
+      background: #9f910f;
+      color: v.$text-label;
+      padding: 0.625rem;
+      cursor: pointer;
+
+      &.active {
+        background: #ffe81f;
+        color: v.$text-label;
+      }
+    }
+  }
+}

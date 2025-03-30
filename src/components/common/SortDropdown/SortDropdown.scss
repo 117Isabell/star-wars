@@ -1,0 +1,14 @@
+.sort-dropdown {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  &__label {
+    color: #a6a6a6;
+    font-size: 0.875rem;
+  }
+
+  select {
+    border: none;
+  }
+}

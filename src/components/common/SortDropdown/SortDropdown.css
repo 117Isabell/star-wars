@@ -1,0 +1,12 @@
+.sort-dropdown {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.sort-dropdown__label {
+  color: #a6a6a6;
+  font-size: 0.875rem;
+}
+.sort-dropdown select {
+  border: none;
+}/*# sourceMappingURL=SortDropdown.css.map */

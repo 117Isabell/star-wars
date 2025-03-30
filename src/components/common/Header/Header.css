@@ -1,0 +1,40 @@
+.header {
+  background-color: #0e0e0e;
+  padding: 20px 0;
+}
+.header__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.header__logo img {
+  height: 40px;
+}
+.header__nav .nav-menu {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+.header__nav .nav-menu li a {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.header__nav .nav-menu li a .nav-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  transition: filter 0.2s ease;
+}
+.header__nav .nav-menu li a:hover {
+  color: #ffe81f;
+}
+.header__nav .nav-menu li a:hover .nav-icon {
+  filter: invert(86%) sepia(98%) saturate(1716%) hue-rotate(334deg) brightness(104%) contrast(101%);
+}
+.header__nav .nav-menu li.active {
+  color: #ffe81f;
+}/*# sourceMappingURL=Header.css.map */

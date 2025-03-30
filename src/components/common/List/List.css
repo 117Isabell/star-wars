@@ -1,0 +1,22 @@
+.list__grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  justify-content: space-between;
+}
+.list__pagination {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 20px;
+}
+.list__pagination .pagination-button {
+  background: #9f910f;
+  color: #a6a6a6;
+  padding: 0.625rem;
+  cursor: pointer;
+}
+.list__pagination .pagination-button.active {
+  background: #ffe81f;
+  color: #a6a6a6;
+}/*# sourceMappingURL=List.css.map */

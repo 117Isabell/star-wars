@@ -1,0 +1,78 @@
+@use '../../../styles/variables' as v;
+
+.detail {
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1.25rem;
+  padding: 2rem 0;
+
+  &__content {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 2rem;
+  }
+
+  &__poster {
+    flex: 0 0 300px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    color: v.$text-secondary;
+  }
+
+  .info-grid {
+    margin-top: 1.5rem;
+    display: grid;
+    gap: 1rem;
+  }
+
+  .info-item {
+    display: flex;
+    padding-bottom: 0.5rem;
+
+    .label {
+      color: v.$text-label;
+      width: 7.5rem;
+      flex-shrink: 1;
+    }
+
+    .value {
+      color: v.$background-color;
+    }
+
+    .show-more {
+      color: #9f910f;
+      background: none;
+      border: none;
+      cursor: pointer;
+      margin-left: 0.5rem;
+      padding: 0;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__description {
+    margin-left: 7.5rem;
+    color: v.$background-color;
+    line-height: 1.6;
+  }
+}
+
+.loading,
+.error {
+  text-align: center;
+  padding: 40px;
+  color: v.$text-color;
+}

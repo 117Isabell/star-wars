@@ -1,0 +1,31 @@
+@use '../../../styles/variables' as v;
+
+.base-page {
+  padding: 2rem;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+
+    &--no-sort {
+      justify-content: flex-start;
+    }
+  }
+
+  &__title {
+    color: v.$text-secondary;
+    font-size: 2rem;
+    margin: 0;
+  }
+}
+
+.episodes,
+.vehicles,
+.starships,
+.species,
+.planets,
+.characters {
+  @extend .base-page;
+}

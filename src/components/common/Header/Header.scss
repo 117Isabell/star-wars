@@ -1,0 +1,55 @@
+@use '../../../styles/variables' as v;
+
+.header {
+  background-color: v.$background-color;
+  padding: 20px 0;
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+  }
+
+  &__logo {
+    img {
+      height: 40px;
+    }
+  }
+
+  &__nav {
+    .nav-menu {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+
+      li {
+        a {
+          display: flex;
+          align-items: center;
+          color: v.$text-color;
+          text-decoration: none;
+          transition: color 0.2s ease;
+
+          .nav-icon {
+            width: 20px;
+            height: 20px;
+            margin-right: 8px;
+            transition: filter 0.2s ease;
+          }
+
+          &:hover {
+            color: v.$primary-color;
+            .nav-icon {
+              filter: invert(86%) sepia(98%) saturate(1716%) hue-rotate(334deg) brightness(104%) contrast(101%);
+            }
+          }
+        }
+
+        &.active {
+          color: v.$primary-color;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+@use '../../../styles/variables' as v;
+
+.breadcrumb {
+  margin-bottom: 2rem;
+  color: v.$background-color;
+
+  a {
+    color: #9f910f;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .separator {
+    margin: 0 0.5rem;
+  }
+
+  .current {
+    color: #a6a6a6;
+  }
+}

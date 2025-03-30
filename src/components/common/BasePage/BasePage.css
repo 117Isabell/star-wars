@@ -1,0 +1,22 @@
+.base-page, .episodes,
+.vehicles,
+.starships,
+.species,
+.planets,
+.characters {
+  padding: 2rem;
+}
+.base-page__header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+.base-page__header--no-sort {
+  justify-content: flex-start;
+}
+.base-page__title {
+  color: #292c33;
+  font-size: 2rem;
+  margin: 0;
+}/*# sourceMappingURL=BasePage.css.map */

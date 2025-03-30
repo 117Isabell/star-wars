@@ -1,0 +1,65 @@
+.detail {
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1.25rem;
+  padding: 2rem 0;
+}
+.detail__content {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 2rem;
+}
+.detail__poster {
+  flex: 0 0 300px;
+}
+.detail__poster img {
+  width: 100%;
+}
+.detail__title {
+  color: #292c33;
+}
+.detail .info-grid {
+  margin-top: 1.5rem;
+  display: grid;
+  gap: 1rem;
+}
+.detail .info-item {
+  display: flex;
+  padding-bottom: 0.5rem;
+}
+.detail .info-item .label {
+  color: #a6a6a6;
+  width: 7.5rem;
+  flex-shrink: 1;
+}
+.detail .info-item .value {
+  color: #0e0e0e;
+}
+.detail .info-item .show-more {
+  color: #9f910f;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 0.5rem;
+  padding: 0;
+}
+.detail .info-item .show-more:hover {
+  text-decoration: underline;
+}
+.detail__description {
+  margin-left: 7.5rem;
+  color: #0e0e0e;
+  line-height: 1.6;
+}
+
+.loading,
+.error {
+  text-align: center;
+  padding: 40px;
+  color: #ffffff;
+}/*# sourceMappingURL=Detail.css.map */

@@ -2,6 +2,10 @@
 
 A React-based web application showcasing Star Wars films, characters, and more using the Star Wars API.
 
+## Preview
+
+![Episodes Page](./src/assets/preview.png)
+
 ## Features
 
 ### Episodes Page
